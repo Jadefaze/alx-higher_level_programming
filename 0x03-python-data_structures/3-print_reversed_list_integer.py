@@ -10,7 +10,7 @@ def print_reversed_list_integer(my_list=[]):
         Nothing
     """
 
-    if len(my_list) == 0:
+    if not my_list:
         pass
     else:
         i = len(my_list) - 1
