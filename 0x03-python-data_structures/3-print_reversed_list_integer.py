@@ -11,7 +11,7 @@ def print_reversed_list_integer(my_list=[]):
     """
 
     if len(my_list) == 0:
-        return
+        print(my_list)
 
     i = len(my_list) - 1
 
