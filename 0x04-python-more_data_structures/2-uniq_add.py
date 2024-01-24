@@ -1,4 +1,4 @@
-#!/usr/bin/pyhon3
+#!/usr/bin/python3
 
 def uniq_add(my_list):
     """ to add unique elements in list
