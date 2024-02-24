@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+
 class Square:
-    """four sided figure. """
+    """Represents a square."""
     pass
