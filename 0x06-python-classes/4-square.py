@@ -31,6 +31,7 @@ class Square:
             Size of the object
         """
         return self.__size
+
     @size.setter
     def size(self, value):
         """property setter
@@ -47,4 +48,3 @@ class Square:
             raise ValueError('size must be >= 0')
         else:
             self.__size = value
-

@@ -6,7 +6,7 @@
 class Square:
     """Represents a square."""
 
-    def __init__(self, size=0, position=(0,0)):
+    def __init__(self, size=0, position=(0, 0)):
         """instatiate with size (private)
 
         Args:
@@ -33,6 +33,7 @@ class Square:
             Size of the object
         """
         return self.__size
+
     @size.setter
     def size(self, value):
         """property setter
@@ -49,6 +50,7 @@ class Square:
             raise ValueError('size must be >= 0')
         else:
             self.__size = value
+
     @property
     def position(self):
         """property getter
@@ -56,6 +58,7 @@ class Square:
         Returns:
             position of object on screen
         """
+
         return self.__position
 
     @position.setter
@@ -67,11 +70,14 @@ class Square:
 
         def position(self, value):
             if not isinstance(value, tuple) or len(value) != 2:
-                raise TypeError("position must be a tuple of 2 positive integers")
+                raise TypeError("position must be a \
+                        tuple of 2 positive integers")
             if not isinstance(value[0], int) or not isinstance(value[1], int):
-                raise TypeError("position must be a tuple of 2 positive integers")
+                raise TypeError("position must be a \
+                        tuple of 2 positive integers")
             if value[0] < 0 or value[1] < 0:
-                raise ValueError("position must be a tuple of 2 positive integers")
+                raise ValueError("position must be a \
+                        tuple of 2 positive integers")
         self.__position = value
 
     def my_print(self):
