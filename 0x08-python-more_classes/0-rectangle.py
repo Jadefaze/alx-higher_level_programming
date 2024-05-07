@@ -3,3 +3,4 @@
 class Rectangle:
     """define a rectangle. """
     pass
+    """does nothing. """
